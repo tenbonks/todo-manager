@@ -5,7 +5,19 @@
 <h3>Add Task</h3>
 
 <div class="row">
-    <form class="col s12">
+    <form  action="" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <label>Choose Cat</label>
+            </div>
+        </div>
+
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">assignment</i>
@@ -32,7 +44,7 @@
 
         <div class="switch">
             <label>
-                
+
                 <input name="is_urgent" id="is_urgent" type="checkbox">
                 <span class="lever"></span>
                 Is Urgent
