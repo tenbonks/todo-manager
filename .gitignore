@@ -352,9 +352,9 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-# ========================================================================================================================
-# CODE BELOW THIS POINT WAS ADDED BY ME, EVERYTHING ABOVE IS ACCREDITED TO GITHUB, LINK FOUND IN README.MD
-# ========================================================================================================================
+# =========================================================================================================|
+# CODE BELOW THIS POINT WAS ADDED BY ME, EVERYTHING ABOVE IS ACCREDITED TO GITHUB, LINK FOUND IN README.MD |
+# =========================================================================================================|
 
 # Python Virtual Environments
 venv
@@ -363,3 +363,6 @@ virtualenv
 
 # More VS files, added as they weren't present in the original file
 .vscode
+
+#my learning/notes file
+notes-for-learning.txt
