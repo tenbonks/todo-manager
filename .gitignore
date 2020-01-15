@@ -357,7 +357,9 @@ MigrationBackup/
 # ========================================================================================================================
 
 # Python Virtual Environments
+venv
 env
+virtualenv
 
 # More VS files, added as they weren't present in the original file
 .vscode
