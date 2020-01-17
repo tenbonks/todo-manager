@@ -1,27 +1,27 @@
-{% extends "base.html" %}
 
-{% block content %}
-{% for task in tasks %}
-
-<ul class="collapsible" data-collapsible="accordion">
-    <li>
-        <div class="collapsible-header">
-            <div class="col s3">
-                <i class="material-icons">expand_more</i>
-                <a class="waves-effect waves-light btn">Done</a>
-                <a class="waves-effect waves-light btn">Edit</a>
+{% extends 'base.html'%} {% block content %}
+<div class="row">
+    <ul class="collapsible" data-collapsible="accordion">
+        {% for task in tasks %}
+        <li>
+            <div class="collapsible-header">
+                <div class="col s3">
+                    <i class="material-icons">expand_more</i>
+                    <a class="waves-effect waves-light btn btn-small">Done</a>
+                    <a href='{{url_for('edit_task', task_id=task._id)}}' class="waves-effect waves-light btn btn-small blue">Edit</a>
+                    
+                </div>
+                <div class="task-header col s9">
+                    <strong>{{task.task_name}}</strong> - {{task.due_date}}
+                </div>
             </div>
-            <div class ='col s9'>
-                <strong>{{task.task_name}} </strong> - {{task.due_date}}</div>
+            <div class="collapsible-body">
+                <span>
+                {{task.task_description}} 
+            </span>
             </div>
-            
-        <div class="collapsible-body"><span>{{task.task_description}}</span></div>
-    </li>
-</ul>
-
-{% endfor %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock %}
-
-{{task.category_name}}
-{{task.is_urgent}}
-{{task.due_date}}
